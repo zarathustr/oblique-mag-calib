@@ -7,6 +7,8 @@
     <em>The proposed magnetometer calibration algorithm. (Left) Exploded view of the sensor error model (inversely), transforming an ideal sphere into a distorted ellipsoid. (Right) Schematic view of the calibration pipeline and global verification process.</em>
 </div>
 
+------
+
 C++17 implementation of the **magnetometer calibration** pipeline used in the MATLAB packages:
 
 1. **Global algebraic ellipsoid initialization** (Wu 2015 initialization):

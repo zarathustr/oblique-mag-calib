@@ -1,5 +1,5 @@
 # Oblique-Mag-Calib
-[![C++](c3p_README/C++-17-green.svg)](https://isocpp.org/)[![GitHub Stars](https://img.shields.io/github/stars/JokerJohn/DCReg.svg)](https://github.com/zarathustr/oblique-mag-calib/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/JokerJohn/DCReg.svg)](https://github.com/zarathustr/LibC3P/issues)
+[![C++](figures/C++-17-green.svg)](https://isocpp.org/)[![GitHub Stars](https://img.shields.io/github/stars/JokerJohn/DCReg.svg)](https://github.com/zarathustr/oblique-mag-calib/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/JokerJohn/DCReg.svg)](https://github.com/zarathustr/LibC3P/issues)
 
 <div align="center">
     <img src="figures/algorithm.png" width="100%" alt="Algorithm Architechture">

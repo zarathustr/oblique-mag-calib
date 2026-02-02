@@ -44,8 +44,8 @@ for i = 1:numel(L)
     f = fullfile(folder, L(i).name);
     files{i} = f;
     S = load_nautilus_txt10(f);
-    Yall = [Yall, S.Y]; %#ok<AGROW>
-    seqall = [seqall, S.seq(:).']; %#ok<AGROW>
+    Yall = [Yall, S.Y]; 
+    seqall = [seqall, S.seq(:).']; 
 end
 
 data = struct();

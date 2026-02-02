@@ -39,7 +39,7 @@ files = cell(numel(csvs), 1);
 for i = 1:numel(csvs)
     f = fullfile(folder, csvs(i).name);
     S = load_3dmg_mag_csv(f);
-    Yall = [Yall, S.Y]; %#ok<AGROW>
+    Yall = [Yall, S.Y]; 
     N_per(i) = S.N;
     files{i} = f;
 end

@@ -62,9 +62,9 @@ while true
     if any(isnan([vx, vy, vz]))
         continue;
     end
-    x(end+1) = vx; %#ok<AGROW>
-    y(end+1) = vy; %#ok<AGROW>
-    z(end+1) = vz; %#ok<AGROW>
+    x(end+1) = vx; 
+    y(end+1) = vy; 
+    z(end+1) = vz; 
 end
 
 S = struct();

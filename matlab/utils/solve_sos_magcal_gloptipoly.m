@@ -53,7 +53,7 @@ end
 
 K = [];
 for k = 1:W
-    K = [K; M(:,k).'*M(:,k) == 1]; %#ok<AGROW>
+    K = [K; M(:,k).'*M(:,k) == 1]; 
 end
 
 if isempty(opts.relax_order)

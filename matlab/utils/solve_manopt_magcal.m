@@ -79,7 +79,7 @@ options.tolgradnorm = opts.tolgradnorm;
 [xopt, cost_final, info, options] = trustregions(problem, x0, options);
 
 T = build_T_from_vars(xopt.sigma, xopt.u2, xopt.u3);
-[T, M, Q] = enforce_positive_diag_gauge(T, xopt.M); %#ok<ASGLU>
+[T, M, Q] = enforce_positive_diag_gauge(T, xopt.M);
 h = xopt.h;
 
 out = struct();

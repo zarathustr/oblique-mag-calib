@@ -1,6 +1,13 @@
-# magcal_cpp_full
+# Oblique-Mag-Calib
+[![C++](c3p_README/C++-17-green.svg)](https://isocpp.org/)[![GitHub Stars](https://img.shields.io/github/stars/JokerJohn/DCReg.svg)](https://github.com/zarathustr/oblique-mag-calib/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/JokerJohn/DCReg.svg)](https://github.com/zarathustr/LibC3P/issues)
 
-C++17 implementation of the **Wu-style magnetometer calibration** pipeline used in the MATLAB packages:
+<div align="center">
+    <img src="figures/algorithm.png" width="100%" alt="Algorithm Architechture">
+    <br>
+    <em>The proposed magnetometer calibration algorithm. (Left) Exploded view of the sensor error model (inversely), transforming an ideal sphere into a distorted ellipsoid. (Right) Schematic view of the calibration pipeline and global verification process.</em>
+</div>
+
+C++17 implementation of the **magnetometer calibration** pipeline used in the MATLAB packages:
 
 1. **Global algebraic ellipsoid initialization** (Wu 2015 initialization):
    - Fits an ellipsoid to raw magnetometer measurements
@@ -61,8 +68,14 @@ In `outdir`:
 
 You can open OBJ meshes in MeshLab or Blender.
 
-
 # MATLAB code
+
+<div align="center">
+    <img src="figures/riemannian.png" width="50%" alt="Riemannian Optimization Theory">
+    <img src="figures/SOS.png" width="50%" alt="SOS Optimization Theory">
+    <br>
+    <em>Left: The local solution strategy on the Riemannian manifold. In our setting, the search space is the product manifold; Right: The moment SOS framework for certified semidefinite relaxations via polynomial optimization.</em>
+</div>
 
 ## Dependencies
 - Manopt (Riemannian optimization in MATLAB): https://www.manopt.org
@@ -95,3 +108,35 @@ addpath(genpath('path/to/manopt'));
 addpath(genpath(pwd));
 run('realdata_nautilus/run_nautilus_experiment.m');
 ```
+
+<div align="center">
+    <img src="figures/nautilus-calib.png" width="100%" alt="Calibration Performance">
+    <br>
+    <img src="figures/calib_gui.png" width="100%" alt="Calibration GUI">
+    <br>
+    <em>Magnetometer calibration results indicate high accuracy. The red spheres are sampled magnetic field measurements while the wireframe denotes the calibrated ellipsoid mesh.</em>
+</div>
+
+
+## Citation
+
+If you find this work useful for your research, please cite our paper:
+
+```bash
+@article{wu2026oblique,
+  title={Three-Axis Magnetometer Calibration on Euclidean-Oblique Product Manifold},
+  author={Wu, Jin and Jiang, Yi and Li, Chong and Zhang, Chengxi and He, Zhijian and Zhang, Wei},
+  journal={Submission to IEEE Transactions on Industrial Electronics},
+  year={2026},
+  publisher={Arxiv},
+  url={[https://github.com/zarathustr/oblique-mag-calib](https://github.com/zarathustr/oblique-mag-calib)}
+}
+```
+
+------
+
+## Issues
+
+For any questions, please open an issue or contact `wujin@ustb.edu.cn` or `hezhijian@sztu.edu.cn`.
+
+

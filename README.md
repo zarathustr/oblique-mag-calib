@@ -128,7 +128,7 @@ If you find this work useful for your research, please cite our paper:
 @article{wu2026oblique,
   title={Three-Axis Magnetometer Calibration on Euclidean-Oblique Product Manifold},
   author={Wu, Jin and Jiang, Yi and Li, Chong and Zhang, Chengxi and He, Zhijian and Zhang, Wei},
-  journal={Submission to IEEE Transactions on Industrial Electronics},
+  journal={Submission to IEEE Transactions on Instrumentation and Measurement},
   year={2026},
   publisher={Arxiv},
   url={[https://github.com/zarathustr/oblique-mag-calib](https://github.com/zarathustr/oblique-mag-calib)}
